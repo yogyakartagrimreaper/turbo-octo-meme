@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper Game</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        .winner { color: green; }
+        .loser { color: red; }
+        button { font-size: 1rem; padding: 10px 20px; margin: 5px; cursor: pointer; }
+        select { font-size: 1rem; padding: 5px; }
+    </style>
+</head>
+<body>
+
+    <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+    <p>Gunakan tombol di bawah untuk mencatat skor.</p>
+
+    <label for="playto">Main Sampai Skor: </label>
+    <select name="playto" id="playto">
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="11">11</option>
+    </select>
+
+    <br><br>
+
+    <button id="p1Button">+1 Pemain Satu</button>
+    <button id="p2Button">+1 Pemain Dua</button>
+    <button id="resetButton">Reset</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
